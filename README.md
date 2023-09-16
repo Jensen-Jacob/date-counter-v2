@@ -1,3 +1,10 @@
+# Date Counter React App
+
+This React application can be used to find out what the date/day/month/year x number of days ago/from today was or will be respectively.
+
+![image](https://github.com/Jensen-Jacob/date-counter-v2/assets/132764387/02135782-9c09-47eb-9abc-2c6adcac4b1b)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
