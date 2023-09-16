@@ -12,8 +12,10 @@ function Counter() {
   const [step, setStep] = useState(1);
   const [count, setCount] = useState(0);
 
+  // Declaring the day variable
   let day;
 
+  // Setting the value of the day variable conditionally
   if (count > 0) {
     if (count === 1) {
       day = "day from today is";
@@ -30,9 +32,15 @@ function Counter() {
     day = "Today is";
   }
 
+  // Getting the current date
   const date = new Date();
+
+  // Using the setDate() function to add x number of days, the number of days
+  // being equal to the value of count
   date.setDate(date.getDate() + count);
 
+  // The handleReset() function handles resetting the inputs in the application
+  // to their original state
   function handleReset() {
     setCount(0);
     setStep(1);
@@ -51,7 +59,6 @@ function Counter() {
             onChange={(e) => setStep(Number(e.target.value))}
           />
         </div>
-        {/* <div> */}
         <div className="count-div">
           <p> Count: </p>
           <button onClick={() => setCount((c) => c - step)}>&minus;</button>
@@ -62,7 +69,6 @@ function Counter() {
           />
           <button onClick={() => setCount((c) => c + step)}>&#43;</button>
         </div>
-        {/* </div> */}
         <div>
           <p>
             {count !== 0 && Math.abs(count)} {day} {date.toDateString()}
