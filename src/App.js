@@ -73,6 +73,10 @@ function Counter() {
           <p>
             {count !== 0 && Math.abs(count)} {day} {date.toDateString()}
           </p>
+          {/* 
+            Conditionally rendering the reset button. It only gets rendered when 
+            changes are made to the input fields as it is only needed at that point.
+          */}
           {count !== 0 || step !== 1 ? (
             <button className="reset-btn" onClick={handleReset}>
               Reset
