@@ -67,9 +67,13 @@ function Counter() {
           <p>
             {count !== 0 && Math.abs(count)} {day} {date.toDateString()}
           </p>
-          <button className="reset-btn" onClick={handleReset}>
-            Reset
-          </button>
+          {count !== 0 || step !== 1 ? (
+            <button className="reset-btn" onClick={handleReset}>
+              Reset
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
