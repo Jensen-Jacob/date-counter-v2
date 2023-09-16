@@ -9,6 +9,16 @@ This React application can be used to find out what the date/day/month/year x nu
 
 To get started, first download the files and run the "npm i" command in the terminal to install all the dependencies.
 
+# Usage
+
+The **"Count"** value determines how many days forward or backwards the application will calculate.
+
+The **"Step"** value determines the increment value for the **"Count"** value, i.e. if you set **"Step"** using the given slider to 2 and given that the **"Count"** value is 0, 
+a single click on the **"+"** button will set the **"Count"** value to 2, which will in turn display what the day, date, month and year will be 2 days from the present date.
+
+**NOTE: The "Reset" button will only be shown if you make any changes to the inputs, i.e. you change the step or count value, as the option to reset the values only becomes necessary
+at that point.**
+
 ## Available Scripts
 
 In the project directory, you can run:
