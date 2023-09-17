@@ -82,7 +82,7 @@ function Counter() {
               Reset
             </button>
           ) : (
-            <></>
+            <>{/* null can also be used here */}</>
           )}
         </div>
       </div>
