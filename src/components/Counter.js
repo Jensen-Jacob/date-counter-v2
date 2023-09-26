@@ -55,17 +55,14 @@ export default function Counter() {
         <div className="count-div">
           <p> Count: </p>
           {/* <button onClick={() => setCount((c) => c - step)}>&minus;</button> */}
-          <Button
-            text={<>&minus;</>}
-            onClick={() => setCount((c) => c - step)}
-          />
+          <Button onClick={() => setCount((c) => c - step)}>&minus;</Button>
           <input
             type="text"
             value={count}
             onChange={(e) => setCount(Number(e.target.value))}
           />
           {/* <button onClick={() => setCount((c) => c + step)}>&#43;</button> */}
-          <Button text={<>&#43;</>} onClick={() => setCount((c) => c + step)} />
+          <Button onClick={() => setCount((c) => c + step)}>&#43;</Button>
         </div>
         <div>
           <p>
@@ -79,11 +76,9 @@ export default function Counter() {
             /* <button className="reset-btn" onClick={handleReset}>
               Reset
             </button> */
-            <Button
-              classname={"reset-btn"}
-              onClick={handleReset}
-              text={"Reset"}
-            />
+            <Button classname={"reset-btn"} onClick={handleReset}>
+              Reset
+            </Button>
           ) : (
             <>{/* null can also be used here */}</>
           )}

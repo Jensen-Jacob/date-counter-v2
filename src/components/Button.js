@@ -1,7 +1,7 @@
-export default function Button({ classname, onClick, text }) {
+export default function Button({ classname, onClick, children }) {
   return (
     <button className={`${classname}`} onClick={onClick}>
-      {text}
+      {children}
     </button>
   );
 }
