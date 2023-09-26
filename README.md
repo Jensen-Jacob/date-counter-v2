@@ -19,11 +19,11 @@ a single click on the **"+"** button will set the **"Count"** value to 2, which 
 **NOTE: The "Reset" button will only be shown if you make any changes to the inputs, i.e. you change the step or count value, as the option to reset the values only becomes necessary
 at that point.**
 
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
