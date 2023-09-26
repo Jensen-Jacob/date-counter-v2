@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function Counter() {
   const [step, setStep] = useState(1);
@@ -53,13 +54,18 @@ export default function Counter() {
         </div>
         <div className="count-div">
           <p> Count: </p>
-          <button onClick={() => setCount((c) => c - step)}>&minus;</button>
+          {/* <button onClick={() => setCount((c) => c - step)}>&minus;</button> */}
+          <Button
+            text={<>&minus;</>}
+            onClick={() => setCount((c) => c - step)}
+          />
           <input
             type="text"
             value={count}
             onChange={(e) => setCount(Number(e.target.value))}
           />
-          <button onClick={() => setCount((c) => c + step)}>&#43;</button>
+          {/* <button onClick={() => setCount((c) => c + step)}>&#43;</button> */}
+          <Button text={<>&#43;</>} onClick={() => setCount((c) => c + step)} />
         </div>
         <div>
           <p>
@@ -70,9 +76,14 @@ export default function Counter() {
             changes are made to the input fields as it is only needed at that point.
           */}
           {count !== 0 || step !== 1 ? (
-            <button className="reset-btn" onClick={handleReset}>
+            /* <button className="reset-btn" onClick={handleReset}>
               Reset
-            </button>
+            </button> */
+            <Button
+              classname={"reset-btn"}
+              onClick={handleReset}
+              text={"Reset"}
+            />
           ) : (
             <>{/* null can also be used here */}</>
           )}
